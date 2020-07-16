@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Devang Mathur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        body{
+            margin: 0px;
+            font-family: 'Roboto Slab', serif;
+        }
+        h1{
+            font-family: 'Satisfy', cursive;
+            color: white;
+            font-size: 50px;
+        } 
+        h4{
+            letter-spacing: 3px;
+            font-family: 'Lato', sans-serif;
+            color: white;
+        }
+        .main{
+            height: 100vh;
+            display: flex;  /* All below properties work with flex only */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(tianjin-2185510.jpg);
+            background-size: cover;
+            border: 5px solid white;
+        }
+        
+        header{
+            position: absolute;
+            top: 10px;
+            width: 100%;
+        }
+        
+        header ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            list-style: none;
+            color: white;
+        }
+        header ul li{
+            margin-right: 50px;
+            font-size: 18px;
+        }
+        
+        header ul a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        .seconddiv > p, .seconddiv > h2 , .thirddiv > p, .thirddiv > h2{
+            color: black;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .seconddiv , .thirddiv, .fourthdiv{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .blockcontainer{
+            display: flex;
+            /* All below properties work with flex only */
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+         .blockcontainer > div{
+            padding: 20px;
+            font-size: 20px;
+            line-height: 120%;
+            margin-left: 40px;
+            margin-right: 40px;
+            text-align: center;
+            flex: 1 1 0px;
+        }
+        
+        .blockcontainer > div > i {
+            font-size: 120px;
+            color: chocolate;
+        }
+        
+        .thirddiv{
+            background-color: chocolate;
+            margin-top: 20px;
+        }
+        
+        form{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        form input{
+            border: none;
+            height: 45px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        
+        .btn{
+            background-color: firebrick;
+            color: white;
+            cursor: pointer;
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .fourthdiv{
+            background-color: black;
+            opacity: 0.8;
+            color: white;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .fourthdiv  div{
+            font-size: 110%;
+            letter-spacing: 2px;
+            line-height: 5px;
+            padding: 10px;           
+        }
+      
+        .fourthdiv a{
+            text-decoration: none;
+        }
+        .fourthdiv i{
+            font-size: 120%;
+        }
+        
+        
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+       .blockcontainer{
+            display: flex;
+            /* All below properties work with flex only */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+    }
+  }
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+       .blockcontainer{
+            display: flex;
+            /* All below properties work with flex only */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+    }
+       .blockcontainer > div{
+            padding: 20px;
+            font-size: 16px;
+            line-height: 120%;
+            margin-left: 40px;
+            margin-right: 40px;
+            text-align: center;
+            flex: 1 1 0px;
+            line-height: 1.3em;
+           }
+         
+        .seconddiv > h2 , .thirddiv > h2{
+            color: black;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+    }
+       header ul li{
+            margin-right: 50px;
+            font-size: 1.5em;
+        }
+ }
+        
+    </style>
+    </head>
+    <body>
+        <div class="main"> 
+        <header>
+            <ul>
+                <a href="#about"><li>About</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>    
+        </header>    
+        <h1 style="font-family: 'Satisfy', cursive;">I am Devang Mathur</h1>
+        <h4 class="fh4">ENGINEERING STUDENT</h4>
+        </div>
+        
+    <div class="seconddiv">
+        <a name="about"></a>
+        <h2>Hello Everyone !</h2>
+        <p style="margin-bottom: 60px;">This is first Web Page</p>
+
+        <div class="blockcontainer">
+            <div class="a">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+            <p>I am Devang Mathur from Ajmer, Rajasthan.
+                I am 19 Years old. My hobbies include Cricket and playing piano ! </p>
+            </div>
+            <div class="b">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            <p>I like Web Development. Programming Languages that I know includes C, C++, Python, HTML & CSS. </p>
+            </div>
+            <div class="a">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <p>I am persuing B-Tech in Computer Science from Engineering College Ajmer. </p>
+            </div>
+        
+        </div>
+        
+    </div>
+        
+    <div class="thirddiv">
+        <a name="contact"></a>
+        <h2 style="padding-top: 30px;">Contact Me</h2>
+        <p style="margin-bottom: 40px;">Nice to meet you!</p>
+        <form>
+            <input type="text" placeholder="Your Name"/>
+             <input type="email" placeholder="Your Email"/>
+             <input type="text" placeholder="Any Query??"/>
+            <input class="btn" type="submit" value="Send Message">
+        </form>
+        </div>
+        
+    <div class="fourthdiv">
+        <h2>Follow Me</h2>
+        <a href="https://www.instagram.com/devang__mathur?r=nametag"><div style="color: orangered"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</div></a>
+        <a href="https://www.linkedin.com/in/devang-mathur-757a781ab?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bria%2BWWBDQd2%2FhLGAWlF0Kw%3D%3D"><div><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</div></a>
+        <a href="mailto:devang1234mathur@gmail.com"><div style="color: coral"><i class="fa fa-envelope-o" aria-hidden="true"></i> E-Mail</div></a>
+            
+        
+    </div>
+       
+    </body>
+</html>
